@@ -1,0 +1,67 @@
+h1 {text-align: center;
+font-size:400%;
+color:#fff;}
+
+h2 {text-align: center;
+line-height: 800px;
+font-size: 300%;
+color: #f4d03f;
+line-height: 10px;}
+
+
+body {
+background: #000000;
+text-align: center;
+}
+form{
+	width: 600px;
+	margin: auto;
+}
+fieldset{
+border: 1px solid #324A2C;
+border-radius: 10px;
+padding: 50px;
+background: rgba(300, 300, 300,.8);
+}
+input[type="text"], input[type="email"],textarea{
+	border: 1px solid #ccc;
+	width: 300px;
+	padding: 10px 20px;
+}
+textarea{
+	height: 150px;}
+
+input[type="submit"]{
+	background: #d94a38;
+	color: #fff;
+	border:none;
+	padding: 15px 10px;
+	font-weight: bold;
+}
+input[type="submit"]{
+	background: #315D25; width:300px;}
+label {
+	font-weight: bold;
+	text-align: right;
+	display: black;
+}
+legend {
+	background: #FFFFFF;
+	text-align: center;
+	font-weight:bold ;
+	padding: 10px;
+}
+ div{
+ width:100px ;
+	height:100px ;	
+	color: #fff;
+	font-size:30px ;
+	float: left;
+}
+.instagram {
+height: 150px;
+width:200px;
+}
+.facebook,.instagram,.youtube{
+	text-align: center;
+}

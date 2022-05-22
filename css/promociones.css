@@ -1,0 +1,20 @@
+body {background:url(../imagenes/Roque.jpg)no-repeat center center fixed;
+background-size:cover;}
+h1 {
+text-align: center;
+font-size:700%;
+color:#304A2C;
+}
+hr { color: #304A2C; background-color: #304A2C; height: 5px; }
+.centrado-1{
+	margin:10px auto;
+	display:block;
+}
+.centrado-2{
+	margin:10px auto;
+	display:block;
+}
+.centrado-3{
+	margin:10px auto;
+	display:block;
+}
