@@ -1,35 +1,54 @@
 body {
-	background: rgb(0, 0, 0);
-	color: #ffffff;
+	margin: 0;
+	padding: 0;
+	font-family:Arial, sans-serif;
+	color: white;
+	background: #000000; 
+	font-size: 1em;
+	line-height: 1.5em;
+	padding-top: 80px;
 }
 
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: sans-serif;
+h1 {
+	font-size: 2.3em;
+  line-height: 1.3em;
+	margin: 15px 0;
+	text-align: center;
+	font-weight: 300;
 }
-.header{
-  width: 100%;
-  height: 180px;
-  background:#334C2D;
-  position: fixed;
+
+p {
+	margin: 0 0 1.5em 0;
 }
-.container{
-  max-width: 785px;
-  margin: auto;
+
+img {
+	max-width: 100%;
+	height: auto;
 }
-.logo{
-  text-align: center;
-  line-height: 0px;
-  padding-top: 15px;
-  margin-right: 27px;
+
+#main-header {
+	background: #334C2D;
+	color: white;
+	height: 135px;
+	
+	width: 100%;
+	left: 0;
+	top: 0;
+	position: fixed;
+}	
+#main-header a {
+		color: white;
+	}
+#logo-header {
+	float: left;
+	padding: 15px 0 0 20px;
+	text-decoration: none;
 }
-.logo ul{
-  list-style: none;
-}
+	
+
 .menu{
-  line-height: 55px;
+	float: right;
+    line-height: 125px;
 }
 .menu ul{
   display: flex;
@@ -42,7 +61,7 @@ body {
   color: #fff;
   transition: all 500ms ease;
 }
-.menu a:hover{
+#main-header a:hover{
   color: #F4D03F;
 }
 
@@ -50,14 +69,35 @@ body {
   background: #334C2D;
   box-shadow: 3px 10px 10px rgba(0, 0, 0, .5);
   display: none;
+  text-align: center;
 }
 .menu .submenu li a{
-  line-height: 50px;
+  line-height: 30px;
 
 }
 .menu ul li a:hover + ul, .menu .submenu:hover{
   display: block;
-  text-align: center;
+
+}
+.submenu a{
+
+}
+
+
+
+
+@media screen and (max-width:940px){
+    .menu ul{
+        width: 80%;
+        height: auto;
+        text-align: center;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap:10px;
+        padding: 0px 0px;
+    }
+    .menu a{
+    	font-size: 70%;
+    }
 }
 
 
@@ -338,7 +378,7 @@ li {padding-top: 5px;}
 }
 .pie-pagina .grupo-1{
     width: 100%;
-    height: 230px;
+    height: 300px;
     max-width: 1200px;
     margin: auto;
     display:grid;
@@ -359,13 +399,12 @@ li {padding-top: 5px;}
 }
 .pie-pagina .grupo-1 .box h2{
     color: #fff;
-    margin-bottom: 10px;
+    margin-bottom: 25px;
     font-size: 20px;
-    text-align: left;
 }
 .pie-pagina .grupo-1 .box p{
     color: #efefef;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
 }
 .box a{
     color: #fff;
@@ -402,6 +441,8 @@ li {padding-top: 5px;}
 @media screen and (max-width:800px){
     .pie-pagina .grupo-1{
         width: 90%;
+        height: auto;
+        text-align: center;
         grid-template-columns: repeat(1, 1fr);
         grid-gap:30px;
         padding: 35px 0px;

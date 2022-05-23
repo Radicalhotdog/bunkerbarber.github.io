@@ -46,7 +46,7 @@
     font-weight: normal;
 }
 .box a:hover{
-    color: aqua;
+    color: #F4D03F;
 }
 .pie-pagina .grupo-1 .red-social a{
     display: inline-block;
@@ -61,7 +61,7 @@
     transition: all 300ms ease;
 }
 .pie-pagina .grupo-1 .red-social a:hover{
-    color: aqua;
+    color: #F4D03F;
 }
 .pie-pagina .grupo-2{
     background-color: #000;
@@ -75,6 +75,8 @@
 @media screen and (max-width:800px){
     .pie-pagina .grupo-1{
         width: 90%;
+        height: auto;
+        text-align: center;
         grid-template-columns: repeat(1, 1fr);
         grid-gap:30px;
         padding: 35px 0px;

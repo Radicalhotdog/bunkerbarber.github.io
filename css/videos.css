@@ -1,30 +1,54 @@
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: sans-serif;
+body {
+    margin: 0;
+    padding: 0;
+    font-family:Arial, sans-serif;
+    color: #666;
+    background-color: rgb(106, 64, 37); 
+    font-size: 1em;
+    line-height: 1.5em;
+    padding-top: 80px;
 }
-.header{
-  width: 100%;
-  height: 180px;
-  background:#334C2D;
-  position: fixed;
+
+h1 {
+    font-size: 2.3em;
+  line-height: 1.3em;
+    margin: 15px 0;
+    text-align: center;
+    font-weight: 300;
 }
-.container{
-  max-width: 785px;
-  margin: auto;
+
+p {
+    margin: 0 0 1.5em 0;
 }
-.logo{
-  text-align: center;
-  line-height: 0px;
-  padding-top: 20px;
-  margin-right: 27px;
+
+img {
+    max-width: 100%;
+    height: auto;
 }
-.logo ul{
-  list-style: none;
+
+#main-header {
+    background: #334C2D;
+    color: white;
+    height: 135px;
+    
+    width: 100%;
+    left: 0;
+    top: 0;
+    position: fixed;
+}   
+#main-header a {
+        color: white;
+    }
+#logo-header {
+    float: left;
+    padding: 15px 0 0 20px;
+    text-decoration: none;
 }
+    
+
 .menu{
-  line-height: 65px;
+    float: right;
+    line-height: 135px;
 }
 .menu ul{
   display: flex;
@@ -37,7 +61,7 @@
   color: #fff;
   transition: all 500ms ease;
 }
-.menu a:hover{
+#main-header a:hover{
   color: #F4D03F;
 }
 
@@ -45,21 +69,35 @@
   background: #334C2D;
   box-shadow: 3px 10px 10px rgba(0, 0, 0, .5);
   display: none;
+  text-align: center;
 }
 .menu .submenu li a{
-  line-height: 50px;
+  line-height: 30px;
 
 }
 .menu ul li a:hover + ul, .menu .submenu:hover{
   display: block;
-  text-align: center;
+
+}
+.submenu a{
+
 }
 
 
 
 
-body{
-    background-color: rgb(106, 64, 37);
+@media screen and (max-width:940px){
+    .menu ul{
+        width: 80%;
+        height: auto;
+        text-align: center;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap:10px;
+        padding: 0px 0px;
+    }
+    .menu a{
+        font-size: 70%;
+    }
 }
 .main {
   /* IMPORTANTE */
@@ -124,7 +162,7 @@ body{
     font-weight: normal;
 }
 .box a:hover{
-    color: aqua;
+    color: #F4D03F;
 }
 .pie-pagina .grupo-1 .red-social a{
     display: inline-block;
@@ -139,7 +177,7 @@ body{
     transition: all 300ms ease;
 }
 .pie-pagina .grupo-1 .red-social a:hover{
-    color: aqua;
+    color: #F4D03F;
 }
 .pie-pagina .grupo-2{
     background-color: #000;
@@ -153,6 +191,8 @@ body{
 @media screen and (max-width:800px){
     .pie-pagina .grupo-1{
         width: 90%;
+        height: auto;
+        text-align: center;
         grid-template-columns: repeat(1, 1fr);
         grid-gap:30px;
         padding: 35px 0px;
