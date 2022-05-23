@@ -1,0 +1,102 @@
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family:Arial, sans-serif;
+	color: #666;
+	background: #f2f2f2; 
+	font-size: 1em;
+	line-height: 1.5em;
+	padding-top: 80px;
+}
+
+h1 {
+	font-size: 2.3em;
+  line-height: 1.3em;
+	margin: 15px 0;
+	text-align: center;
+	font-weight: 300;
+}
+
+p {
+	margin: 0 0 1.5em 0;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+#main-header {
+	background: #334C2D;
+	color: white;
+	height: 135px;
+	
+	width: 100%;
+	left: 0;
+	top: 0;
+	position: fixed;
+}	
+#main-header a {
+		color: white;
+	}
+#logo-header {
+	float: left;
+	padding: 15px 0 0 20px;
+	text-decoration: none;
+}
+	
+
+.menu{
+	float: right;
+    line-height: 95px;
+}
+.menu ul{
+  display: flex;
+  list-style: none;
+}
+.menu a{
+  display: block;
+  padding-right: 15px;
+  text-decoration: none;
+  color: #fff;
+  transition: all 500ms ease;
+}
+#main-header a:hover{
+  color: #F4D03F;
+}
+
+.menu .submenu{
+  background: #334C2D;
+  box-shadow: 3px 10px 10px rgba(0, 0, 0, .5);
+  display: none;
+  text-align: center;
+}
+.menu .submenu li a{
+  line-height: 30px;
+
+}
+.menu ul li a:hover + ul, .menu .submenu:hover{
+  display: block;
+
+}
+.submenu a{
+
+}
+
+
+
+
+@media screen and (max-width:940px){
+    .menu ul{
+        width: 80%;
+        height: auto;
+        text-align: center;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap:10px;
+        padding: 0px 0px;
+    }
+    .menu a{
+    	font-size: 70%;
+    }
+}
