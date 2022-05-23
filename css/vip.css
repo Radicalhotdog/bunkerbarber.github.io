@@ -102,20 +102,22 @@ img {
 
 
 .parallax {
-  clear: both;
-  width: 100%;
-  height: 586px;
-  background:url(../imagenes/bebidas.jpg) fixed no-repeat;
-  background-size: cover;
-  background-position: center top;
+    clear: both;
+    width: 100%;
+    height: 850px;
+    background:url(../imagenes/bebidas.jpg) fixed no-repeat;
+    background-size: cover;
+    background-position: center top;
+    text-align: center;
+    line-height: 850px;
+    font-size: 400%;
+    padding-top: 16.5%;
+
 }
 .parallax h1{
-  text-align: center;
-  line-height:0px;
-  font-size:600%;
-  line-height: 600px;
-  font-family: tbunker;
-  color: #F4D03F;
+    font-family: tbunker;
+    color: #F4D03F;
+    
 }
 
 
@@ -135,7 +137,7 @@ h1{
   width: 90%;
   max-width: 900px;
   margin: auto;
-  height: 100vh;
+  height: auto;
   display: flex;
   justify-content: center;
   align-items: center;

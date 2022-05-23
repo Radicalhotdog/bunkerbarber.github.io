@@ -112,10 +112,13 @@ img {
 	text-align: center;
 	line-height: 850px;
 	font-size: 400%;
+    padding-top: 15%;
+
 }
 .parallax h1{
     font-family: tbunker;
     color: #F4D03F;
+    
 }
 
 
@@ -126,7 +129,12 @@ h2 {
 }
 
 .bunker {
-	text-align: center;
+    font-size: 50%;
+    max-width: 65%;
+}
+img{
+    display: block;
+    margin: 0px auto;
 }
 .video{
 	text-align: center;
