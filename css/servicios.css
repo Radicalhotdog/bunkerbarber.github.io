@@ -1,4 +1,3 @@
-
 body {
 	margin: 0;
 	padding: 0;
@@ -7,7 +6,7 @@ body {
 	color: #ffffff; 
 	font-size: 1em;
 	line-height: 1.5em;
-	padding-top: 0px;
+	padding-top: 20px;
 }
 
 h1 {
@@ -114,7 +113,7 @@ h3{
 .base{
     text-align: center;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(578px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
     grid-auto-rows: minmax(200px, auto);
     gap: 50px;
     padding: 100px;
@@ -136,13 +135,33 @@ h3{
     overflow: hidden;
 }
 
+@media all and (min-width: 320px) {
+  .base {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media all and (min-width: 768px) {
+  .base {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media all and (min-width: 1024px) {
+  .base {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+/*
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
-}
+}*/
 /*:::::Pie de Pagina*/
 .pie-pagina{
     width: 100%;
